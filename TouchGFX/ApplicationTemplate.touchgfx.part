@@ -1,0 +1,22 @@
+
+{
+  "Application": {
+    "Name": "NG0B1_GFX01M2_TGFX",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "AvailableColorDepths": [ 16 ],
+    "AvailableLCDs":
+    {
+      "16": "LCD16bppSerialFlash"
+    },
+    "AvailableResolutions" : [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../NG0B1_GFX01M2_TGFX.ioc --platform=m0+",
+    "Family" : "STM32G0",
+    "SubFamily" : "STM32G0x1"
+  },
+  "Version": "4.17.0"
+}
