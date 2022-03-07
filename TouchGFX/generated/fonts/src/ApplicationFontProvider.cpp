@@ -5,6 +5,8 @@
 #include <fonts/GeneratedFont.hpp>
 #include <texts/TypedTextDatabase.hpp>
 
+touchgfx::FlashDataReader* ApplicationFontProvider::fontFlashReader = 0;
+
 touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
 {
     switch (typography)

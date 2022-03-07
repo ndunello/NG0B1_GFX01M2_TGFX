@@ -31,13 +31,16 @@ class ApplicationFontProvider : public touchgfx::FontProvider
 public:
     virtual touchgfx::Font* getFont(touchgfx::FontId typography);
 
-    static void setFlashReader(touchgfx::FlashDataReader* /* flashReader */)
+    static void setFlashReader(touchgfx::FlashDataReader* flashReader)
     {
+        fontFlashReader = flashReader;
     }
     static touchgfx::FlashDataReader* getFlashReader()
     {
-        return 0;
+        return fontFlashReader;
     }
+private:
+    static touchgfx::FlashDataReader* fontFlashReader;
 };
 
 #endif // TOUCHGFX_APPLICATIONFONTPROVIDER_HPP

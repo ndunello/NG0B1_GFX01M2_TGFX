@@ -51,4 +51,11 @@ void Screen2ViewBase::handleKeyEvent(uint8_t key)
         //Go to Screen1 with no screen transition
         application().gotoScreen1ScreenNoTransition();
     }
+    if(53 == key)
+    {
+        //gotoScreen3
+        //When hardware button 53 clicked change screen to Screen3
+        //Go to Screen3 with no screen transition
+        application().gotoScreen3ScreenNoTransition();
+    }
 }

@@ -26,6 +26,15 @@
     <ClCompile Include="..\..\gui\src\screen2_screen\Screen2Presenter.cpp"/>
     <ClCompile Include="..\..\gui\src\screen2_screen\Screen2View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen2_screen\Screen2ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen3_screen\Screen3Presenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen3_screen\Screen3View.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen3_screen\Screen3ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen4_screen\Screen4Presenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen4_screen\Screen4View.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen4_screen\Screen4ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen5_screen\Screen5Presenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\screen5_screen\Screen5View.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\screen5_screen\Screen5ViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -179,6 +188,15 @@
     <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2Presenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3Presenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen3_screen\Screen3View.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen3_screen\Screen3ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen4_screen\Screen4Presenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen4_screen\Screen4View.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen4_screen\Screen4ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen5_screen\Screen5Presenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\screen5_screen\Screen5View.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen5_screen\Screen5ViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

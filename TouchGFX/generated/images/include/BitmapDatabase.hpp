@@ -6,6 +6,9 @@
 #include <touchgfx/hal/Types.hpp>
 #include <touchgfx/Bitmap.hpp>
 
+const uint16_t BITMAP_COLORFUL_STRIPES_ID = 0;
+const uint16_t BITMAP_SPHERE_ID = 1;
+const uint16_t BITMAP_SPHERE_COLOR_ID = 2;
 
 namespace BitmapDatabase
 {

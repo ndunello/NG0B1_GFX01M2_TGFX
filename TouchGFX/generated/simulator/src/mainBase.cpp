@@ -4,9 +4,29 @@
 #include <simulator/mainBase.hpp>
 #include <platform/hal/simulator/sdl2/HALSDL2.hpp>
 #include <common/TouchGFXInit.hpp>
+#include <touchgfx/hal/FlashDataReader.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <string.h>
 
+class SimulatorFlashDataReader : public FlashDataReader
+{
+  virtual bool addressIsAddressable(const void* address) { return true; }
+  virtual void copyData(const void* src, void* dst, uint32_t bytes)
+  {
+    memcpy(dst, src, bytes);
+  }
+  virtual void startFlashLineRead(const void* src, uint32_t bytes)
+  {
+    assert(bytes < 1000);
+    memcpy(buffer, src, bytes);
+  }
+  virtual const uint8_t* waitFlashReadComplete()
+  {
+    return buffer;
+  }
+private:
+  uint8_t buffer[1000];
+} flashReader;
 
 void setupSimulator(int argc, char** argv, touchgfx::HAL& hal) {
   // Simulate hardware running at 60Hz generating a vsync every 16.6667 ms
@@ -17,6 +37,7 @@ void setupSimulator(int argc, char** argv, touchgfx::HAL& hal) {
   bool sdl_init_result = static_cast<touchgfx::HALSDL2&>(hal).sdl_init(argc, argv);
   assert(sdl_init_result && "Error during SDL initialization");
 
+  ApplicationFontProvider::setFlashReader(&flashReader);
 }
 
 touchgfx::LCD16bpp lcd;
