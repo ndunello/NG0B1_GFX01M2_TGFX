@@ -18,11 +18,11 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
-#include <MB1642DDataReader.h>
 #include "main.h"
 #include "stm32g0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <MB1642DDataReader.h>
 #include <MB1642DDisplayDriver.h>
 /* USER CODE END Includes */
 

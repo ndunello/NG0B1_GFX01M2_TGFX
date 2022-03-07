@@ -13,13 +13,13 @@
   *
   ******************************************************************************
   */
-#include <MB1642DButtonController.hpp>
 #include <TouchGFXHAL.hpp>
 
 /* USER CODE BEGIN TouchGFXHAL.cpp */
 #include <touchgfx/hal/OSWrappers.hpp>
 #include "stm32g0xx.h"
 #include "TouchGFXHAL.hpp"
+#include <MB1642DButtonController.hpp>
 
 
 extern "C" {
